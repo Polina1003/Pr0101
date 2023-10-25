@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="lesuser28Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="lesuser28Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Предметы" EntityType="lesuser28Model.Предметы" />
+    <EntitySet Name="Ученики_Кузьмина" EntityType="lesuser28Model.Ученики_Кузьмина" />
+    <EntitySet Name="Школы" EntityType="lesuser28Model.Школы" />
+    <AssociationSet Name="FK_Ученики_Кузьмина_Предметы" Association="lesuser28Model.FK_Ученики_Кузьмина_Предметы">
+      <End Role="Предметы" EntitySet="Предметы" />
+      <End Role="Ученики_Кузьмина" EntitySet="Ученики_Кузьмина" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ученики_Кузьмина_Школы" Association="lesuser28Model.FK_Ученики_Кузьмина_Школы">
+      <End Role="Школы" EntitySet="Школы" />
+      <End Role="Ученики_Кузьмина" EntitySet="Ученики_Кузьмина" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Предметы">
+    <Key>
+      <PropertyRef Name="ID_Предмета" />
+    </Key>
+    <Property Name="ID_Предмета" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Название" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Часы" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Ученики_Кузьмина" Relationship="lesuser28Model.FK_Ученики_Кузьмина_Предметы" FromRole="Предметы" ToRole="Ученики_Кузьмина" />
+  </EntityType>
+  <EntityType Name="Ученики_Кузьмина">
+    <Key>
+      <PropertyRef Name="ID_ученика" />
+    </Key>
+    <Property Name="ID_ученика" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Фамилия" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ID_предмета" Type="Int32" />
+    <Property Name="ID_школы" Type="Int32" />
+    <NavigationProperty Name="Предметы" Relationship="lesuser28Model.FK_Ученики_Кузьмина_Предметы" FromRole="Ученики_Кузьмина" ToRole="Предметы" />
+    <NavigationProperty Name="Школы" Relationship="lesuser28Model.FK_Ученики_Кузьмина_Школы" FromRole="Ученики_Кузьмина" ToRole="Школы" />
+    <Property Name="Баллы" Type="Double" />
+  </EntityType>
+  <EntityType Name="Школы">
+    <Key>
+      <PropertyRef Name="ID_Школы" />
+    </Key>
+    <Property Name="ID_Школы" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Название" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Ученики_Кузьмина" Relationship="lesuser28Model.FK_Ученики_Кузьмина_Школы" FromRole="Школы" ToRole="Ученики_Кузьмина" />
+  </EntityType>
+  <Association Name="FK_Ученики_Кузьмина_Предметы">
+    <End Type="lesuser28Model.Предметы" Role="Предметы" Multiplicity="0..1" />
+    <End Type="lesuser28Model.Ученики_Кузьмина" Role="Ученики_Кузьмина" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Предметы">
+        <PropertyRef Name="ID_Предмета" />
+      </Principal>
+      <Dependent Role="Ученики_Кузьмина">
+        <PropertyRef Name="ID_предмета" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ученики_Кузьмина_Школы">
+    <End Type="lesuser28Model.Школы" Role="Школы" Multiplicity="0..1" />
+    <End Type="lesuser28Model.Ученики_Кузьмина" Role="Ученики_Кузьмина" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Школы">
+        <PropertyRef Name="ID_Школы" />
+      </Principal>
+      <Dependent Role="Ученики_Кузьмина">
+        <PropertyRef Name="ID_школы" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

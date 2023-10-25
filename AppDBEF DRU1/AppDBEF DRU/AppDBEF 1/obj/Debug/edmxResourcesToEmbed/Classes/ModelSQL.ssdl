@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище lesuser13Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Postavchiki">
+    <Key>
+      <PropertyRef Name="ID_Поставщика" />
+    </Key>
+    <Property Name="ID_Поставщика" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Стоимость_перевозки" Type="varchar" MaxLength="50" />
+    <Property Name="Имя_поставщика" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Tovarbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Название_товара" Type="varchar" MaxLength="50" />
+    <Property Name="Колво_на_складе" Type="int" />
+    <Property Name="Стоимость_ед_товара" Type="varchar" MaxLength="50" />
+    <Property Name="Описание_товара" Type="varchar(max)" />
+    <Property Name="Единица_измерения" Type="varchar" MaxLength="50" />
+    <Property Name="ID_Поставщика" Type="int" />
+  </EntityType>
+  <Association Name="FK_Tovarbl_Postavchiki">
+    <End Role="Postavchiki" Type="Self.Postavchiki" Multiplicity="0..1" />
+    <End Role="Tovarbl" Type="Self.Tovarbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Postavchiki">
+        <PropertyRef Name="ID_Поставщика" />
+      </Principal>
+      <Dependent Role="Tovarbl">
+        <PropertyRef Name="ID_Поставщика" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище lesuser13ModelContainer">
+    <EntitySet Name="Postavchiki" EntityType="Self.Postavchiki" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tovarbl" EntityType="Self.Tovarbl" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Tovarbl_Postavchiki" Association="Self.FK_Tovarbl_Postavchiki">
+      <End Role="Postavchiki" EntitySet="Postavchiki" />
+      <End Role="Tovarbl" EntitySet="Tovarbl" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

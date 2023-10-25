@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="lesuser13Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Postavchiki">
+    <Key>
+      <PropertyRef Name="ID_Поставщика" />
+    </Key>
+    <Property Name="ID_Поставщика" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Стоимость_перевозки" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Имя_поставщика" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Tovarbl" Relationship="Self.FK_Tovarbl_Postavchiki" FromRole="Postavchiki" ToRole="Tovarbl" />
+  </EntityType>
+  <EntityType Name="Tovarbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Название_товара" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Колво_на_складе" Type="Int32" />
+    <Property Name="Стоимость_ед_товара" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Описание_товара" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Единица_измерения" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Поставщика" Type="Int32" />
+    <NavigationProperty Name="Postavchiki" Relationship="Self.FK_Tovarbl_Postavchiki" FromRole="Tovarbl" ToRole="Postavchiki" />
+  </EntityType>
+  <Association Name="FK_Tovarbl_Postavchiki">
+    <End Role="Postavchiki" Type="Self.Postavchiki" Multiplicity="0..1" />
+    <End Role="Tovarbl" Type="Self.Tovarbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Postavchiki">
+        <PropertyRef Name="ID_Поставщика" />
+      </Principal>
+      <Dependent Role="Tovarbl">
+        <PropertyRef Name="ID_Поставщика" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="lesuser13Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Postavchiki" EntityType="Self.Postavchiki" />
+    <EntitySet Name="Tovarbl" EntityType="Self.Tovarbl" />
+    <AssociationSet Name="FK_Tovarbl_Postavchiki" Association="Self.FK_Tovarbl_Postavchiki">
+      <End Role="Postavchiki" EntitySet="Postavchiki" />
+      <End Role="Tovarbl" EntitySet="Tovarbl" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

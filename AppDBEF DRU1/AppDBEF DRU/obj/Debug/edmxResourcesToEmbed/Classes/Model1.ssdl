@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище uchebnayaDrugovaModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Pabotbl">
+    <Key>
+      <PropertyRef Name="ID_shifr" />
+    </Key>
+    <Property Name="ID_shifr" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nazvanie" Type="varchar" MaxLength="50" />
+    <Property Name="FIO" Type="varchar(max)" />
+    <Property Name="Data_vbIdachi" Type="date" />
+    <Property Name="Data_okonchania" Type="date" />
+    <Property Name="ID_nomer" Type="int" />
+    <Property Name="Images" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Porychenia">
+    <Key>
+      <PropertyRef Name="ID_nomer" />
+    </Key>
+    <Property Name="ID_nomer" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Doljnostb" Type="varchar" MaxLength="50" />
+    <Property Name="Trudoemkostb" Type="int" />
+  </EntityType>
+  <Association Name="FK_Pabotbl_Porychenia">
+    <End Role="Porychenia" Type="Self.Porychenia" Multiplicity="0..1" />
+    <End Role="Pabotbl" Type="Self.Pabotbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Porychenia">
+        <PropertyRef Name="ID_nomer" />
+      </Principal>
+      <Dependent Role="Pabotbl">
+        <PropertyRef Name="ID_nomer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище uchebnayaDrugovaModelContainer">
+    <EntitySet Name="Pabotbl" EntityType="Self.Pabotbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Porychenia" EntityType="Self.Porychenia" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Pabotbl_Porychenia" Association="Self.FK_Pabotbl_Porychenia">
+      <End Role="Porychenia" EntitySet="Porychenia" />
+      <End Role="Pabotbl" EntitySet="Pabotbl" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

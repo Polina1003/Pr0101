@@ -1,0 +1,79 @@
+C:\Users\С.Администратор\source\repos\AppDBEF\bin\Debug\AppDBEF.exe.config
+C:\Users\С.Администратор\source\repos\AppDBEF\bin\Debug\AppDBEF.exe
+C:\Users\С.Администратор\source\repos\AppDBEF\bin\Debug\AppDBEF.pdb
+C:\Users\С.Администратор\source\repos\AppDBEF\bin\Debug\EntityFramework.dll
+C:\Users\С.Администратор\source\repos\AppDBEF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\С.Администратор\source\repos\AppDBEF\bin\Debug\EntityFramework.xml
+C:\Users\С.Администратор\source\repos\AppDBEF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\С.Администратор\source\repos\AppDBEF\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\С.Администратор\source\repos\AppDBEF\obj\Debug\AppDBEF.csproj.AssemblyReference.cache
+C:\Users\С.Администратор\source\repos\AppDBEF\obj\Debug\MainWindow.g.cs
+C:\Users\С.Администратор\source\repos\AppDBEF\obj\Debug\Pages\PageListStudent.g.cs
+C:\Users\С.Администратор\source\repos\AppDBEF\obj\Debug\App.g.cs
+C:\Users\С.Администратор\source\repos\AppDBEF\obj\Debug\AppDBEF_Content.g.cs
+C:\Users\С.Администратор\source\repos\AppDBEF\obj\Debug\AppDBEF_MarkupCompile.cache
+C:\Users\С.Администратор\source\repos\AppDBEF\obj\Debug\AppDBEF_MarkupCompile.lref
+C:\Users\С.Администратор\source\repos\AppDBEF\obj\Debug\MainWindow.baml
+C:\Users\С.Администратор\source\repos\AppDBEF\obj\Debug\Pages\PageListStudent.baml
+C:\Users\С.Администратор\source\repos\AppDBEF\obj\Debug\AppDBEF.g.resources
+C:\Users\С.Администратор\source\repos\AppDBEF\obj\Debug\AppDBEF.Properties.Resources.resources
+C:\Users\С.Администратор\source\repos\AppDBEF\obj\Debug\AppDBEF.csproj.GenerateResource.cache
+C:\Users\С.Администратор\source\repos\AppDBEF\obj\Debug\AppDBEF.csproj.CoreCompileInputs.cache
+C:\Users\С.Администратор\source\repos\AppDBEF\obj\Debug\AppDBEF.csproj.CopyComplete
+C:\Users\С.Администратор\source\repos\AppDBEF\obj\Debug\AppDBEF.exe
+C:\Users\С.Администратор\source\repos\AppDBEF\obj\Debug\AppDBEF.pdb
+C:\Users\С.Администратор\source\repos\AppDBEF\obj\Debug\Pages\PageAddEdit.g.cs
+C:\Users\С.Администратор\source\repos\AppDBEF\obj\Debug\Pages\PageAddEdit.baml
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\obj\Debug\AppDBEF.csproj.AssemblyReference.cache
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\obj\Debug\AppDBEF.csproj.SuggestedBindingRedirects.cache
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\obj\Debug\MainWindow.g.cs
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\obj\Debug\Pages\PageAddEdit.g.cs
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\obj\Debug\Pages\PageListStudent.g.cs
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\obj\Debug\App.g.cs
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\obj\Debug\AppDBEF_Content.g.cs
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\obj\Debug\AppDBEF_MarkupCompile.cache
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\obj\Debug\AppDBEF_MarkupCompile.lref
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\obj\Debug\AppDBEF.exe
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\obj\Debug\AppDBEF.pdb
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\bin\Debug\AppDBEF.exe.config
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\bin\Debug\AppDBEF.exe
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\bin\Debug\AppDBEF.pdb
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\bin\Debug\EntityFramework.dll
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\bin\Debug\EntityFramework.xml
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\obj\Debug\MainWindow.baml
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\obj\Debug\Pages\PageAddEdit.baml
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\obj\Debug\Pages\PageListStudent.baml
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\obj\Debug\AppDBEF.g.resources
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\obj\Debug\AppDBEF.Properties.Resources.resources
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\obj\Debug\AppDBEF.csproj.GenerateResource.cache
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\obj\Debug\AppDBEF.csproj.CoreCompileInputs.cache
+C:\Users\misas\Desktop\AppDBEF - версия 2 — копия (2)\obj\Debug\AppDBEF.csproj.CopyComplete
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\bin\Debug\AppDBEF.exe.config
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\bin\Debug\AppDBEF.exe
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\bin\Debug\AppDBEF.pdb
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\bin\Debug\EntityFramework.dll
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\bin\Debug\EntityFramework.xml
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\obj\Debug\MainWindow.g.cs
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\obj\Debug\Pages\PageAddEdit.g.cs
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\obj\Debug\Pages\PageListStudent.g.cs
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\obj\Debug\App.g.cs
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\obj\Debug\AppDBEF_Content.g.cs
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\obj\Debug\AppDBEF_MarkupCompile.cache
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\obj\Debug\AppDBEF_MarkupCompile.lref
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\obj\Debug\MainWindow.baml
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\obj\Debug\Pages\PageAddEdit.baml
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\obj\Debug\Pages\PageListStudent.baml
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\obj\Debug\AppDBEF.g.resources
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\obj\Debug\AppDBEF.Properties.Resources.resources
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\obj\Debug\AppDBEF.csproj.GenerateResource.cache
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\obj\Debug\AppDBEF.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\obj\Debug\AppDBEF.csproj.CopyComplete
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\obj\Debug\AppDBEF.exe
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\obj\Debug\AppDBEF.pdb
+C:\Users\student\Desktop\AppDBEF 1\AppDBEF 1\obj\Debug\AppDBEF.csproj.AssemblyReference.cache
